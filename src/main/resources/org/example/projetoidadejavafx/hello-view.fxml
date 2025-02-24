@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.projetoidadejavafx.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="413.0" fitWidth="314.0" layoutX="-84.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/e815bb07773cae6783d05d29dea7ac46.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="-46.0" layoutY="240.0" prefHeight="55.0" prefWidth="236.0" text="Unidade de medida " textFill="#06518b">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="-46.0" layoutY="172.0" text="Temperatura C°" textFill="#06518b">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="113.0" layoutY="174.0" prefHeight="25.0" prefWidth="198.0" />
+            <ImageView fitHeight="124.0" fitWidth="218.0" layoutX="-28.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="280.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/c0cf811b6355be6f12fed44bf51e8fd2-termometro-de-temperatura-icon-svg.webp" />
+               </image>
+            </ImageView>
+            <Label layoutX="-15.0" layoutY="41.0" text="Convertor Temperatura" textFill="#06518b">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <TextField layoutX="113.0" layoutY="255.0" prefHeight="25.0" prefWidth="198.0" />
+            <Button layoutX="84.0" layoutY="325.0" mnemonicParsing="false" style="-fx-background-color: #06518b;" text="Converter" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
